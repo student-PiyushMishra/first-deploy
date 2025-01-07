@@ -12,18 +12,16 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-    if(fs){
-        fs.readdir("./texts", function (err, files) {
-            if (err) {
-                console.error("Error reading directory:", err);
-                return res.status(500).send("Error reading directory");
-            }
-            res.render('index', { files: files });
-        });
-    }
-    else{
-        res.render('index');
-    }
+    // if(fs){
+    //     fs.readdir("./texts", function (err, files) {
+    //         if (err) {
+    //             console.error("Error reading directory:", err);
+    //             return res.status(500).send("Error reading directory");
+    //         }
+    //         res.render('index', { files: files });
+    //     });
+    // }
+    res.render('index');
 })
 
 app.post("/create", (req, res) => {
@@ -55,7 +53,7 @@ app.get("/file/:filename", (req, res) => {
     });
 })
 
-app.listen(process.env.PORT,(err)=>{
-    if(err) console.error(err);
+app.listen(process.env.PORT, (err) => {
+    if (err) console.error(err);
     else console.log('server is running...')
 });
