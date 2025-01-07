@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    height:100%;
+    width: 100%;
+    background-color: rgb(10, 10, 10);
+    color:white;
+    padding: 3em;
+}
+a{
+    text-decoration: none;
+    color: rgb(168, 156, 47);
+}
+h1{
+    margin-top: 1.5em;
+    font-weight: 500;
+    color:white;
+}
+p {
+    max-width: 100%;
+    font-size: medium;
+    color: whitesmoke;
+    margin-top: 1em;
+    line-height:150%;
+    overflow-wrap: break-word;  
+    word-break: break-word;     
+    white-space: normal;        
+}

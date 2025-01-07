@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    height:100%;
+    width: 100%;
+    background-color: rgb(10, 10, 10);
+}
+.main{
+    min-height:fit-content;
+    width:100vw;
+    padding:3em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.main input{
+    color:white;
+    font-size: medium;
+    background-color: rgb(31, 30, 30);
+    border: none;
+    outline: none;
+}
+.main .submit{
+    max-width: fit-content;
+    transition:0.3s all ease;
+    background-color: rgb(48, 156, 233);
+    border: none;
+}
+.main .submit:active{
+    transform:translateY(5px);
+}
+.main textarea{
+    font-size: medium;
+    resize: none;
+    outline: none;
+    background-color: rgb(31, 30, 30);
+    border: none;
+    color:white;
+}
+.tasks{
+    height:auto;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3em;
+    gap:2em;
+}
+.tasks>h3{
+    color:rgb(168, 156, 47);
+    font-weight: 400;
+}
+.task{
+    display:flex;
+    flex-direction: column;
+    width:fit-content;
+    background-color: rgb(31, 30, 30);
+    color: white;
+    gap: 0.7em;
+    min-width: 14rem;
+}
+.task a{
+    color: rgb(168, 156, 47);
+    text-decoration: none;
+}

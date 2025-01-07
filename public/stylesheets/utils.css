@@ -1,0 +1,32 @@
+.w-full{
+    width:100%;
+}
+.px-2{
+    padding-top: 0.6em;
+    padding-bottom: 1em;
+}
+.py-5{
+    padding-right: 1em;
+    padding-left: 1em;
+}
+.pointer{
+    cursor: pointer;
+}
+.rounded{
+    border-radius: 0.3em;
+}
+.px-submit{
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+}
+.hidden{
+    display:none;
+}
+.flex{
+    display: flex;
+}
+.center{
+    font-size: small;
+    align-items: center;
+    justify-content: space-between;
+}

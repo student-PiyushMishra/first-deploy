@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Name...</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/utils.css">
+    <link rel="stylesheet" href="/stylesheets/show.css">
+    <style>
+        .main{
+            margin-top: 3em;
+            padding:0;
+            max-width:50%;
+            
+        }
+</style>
+</head>
+<body>
+    <a href="/">Return to home...</a>
+    <form action="/edit" method="post" class="main">
+        <input class=" w-full px-2 py-5 rounded" style="color:rgb(175, 167, 167);" type="text" placeholder="Previous Name" name="previous" value="<%= fileName%>" readonly>
+        <textarea class="w-full px-2 py-5 rounded" placeholder="New name..." name="new"></textarea>
+        <input class="px-submit py-5 pointer rounded submit" style="background-color: rgb(168, 156, 47);" type="submit" value="Rename">
+    </form>
+</body>
+</html>
