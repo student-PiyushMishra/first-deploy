@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
     //         res.render('index', { files: files });
     //     });
     // }
-    res.send('heliha;elgiheg');
+    res.render('index.ejs');
 })
 
 app.post("/create", (req, res) => {
