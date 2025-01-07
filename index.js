@@ -12,14 +12,18 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-    fs.readdir("./texts", function (err, files) {
-        if (err) {
-            console.error("Error reading directory:", err);
-            return res.status(500).send("Error reading directory");
-        }
-        res.render('index', { files: files });
-    });
-
+    if(fs){
+        fs.readdir("./texts", function (err, files) {
+            if (err) {
+                console.error("Error reading directory:", err);
+                return res.status(500).send("Error reading directory");
+            }
+            res.render('index', { files: files });
+        });
+    }
+    else{
+        res.render('index');
+    }
 })
 
 app.post("/create", (req, res) => {
