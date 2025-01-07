@@ -3,6 +3,7 @@ const app = express();
 const ejs = require('ejs');
 const path = require("path");
 const fs = require("fs");
+require('dotenv').config();
 
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
@@ -51,6 +52,6 @@ app.get("/file/:filename", (req, res) => {
 })
 
 app.listen(process.env.PORT,(err)=>{
-    if(err) console.log('Error');
+    if(err) console.error(err);
     else console.log('server is running...')
 });
