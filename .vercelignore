@@ -1,0 +1,6 @@
+# Ignore node_modules to optimize deployment
+node_modules/
+
+# Don't ignore views or public folders (important)
+!views/
+!public/
