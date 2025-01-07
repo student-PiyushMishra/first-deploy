@@ -15,7 +15,9 @@ admin.initializeApp({
 const db = admin.firestore();
 const notesCollection = db.collection("notes");  // Firestore collection for notes
 
+
 app.set("view engine", "ejs");
+app.set('views', path.join(__dirname, 'views')); // This ensures Express knows where the views folder is
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use(express.json());

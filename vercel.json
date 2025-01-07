@@ -8,6 +8,12 @@
     ],
     "env": {
       "FIREBASE_CREDENTIALS": "@firebase-credentials"
-    }
+    },
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.js"
+      }
+    ]
   }
   
